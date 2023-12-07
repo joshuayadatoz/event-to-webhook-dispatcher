@@ -8,6 +8,7 @@ import (
 )
 
 func sendWebhookNotification(data []byte) error {
+	//url is alive for only 7 days, before sharing the project we need to update it
 	webhookURLs := []string{
 		"https://webhook.site/2898cf90-f0a5-4718-b5cd-9ab40fa2f498",
 	}
